@@ -9,7 +9,7 @@
 namespace Tests\Test\App;
 
 use Xin\Support\File;
-use Xin\Swoole\Queue\Task;
+use Know\Swoole\Queue\Task;
 
 class TestQueue extends Task
 {

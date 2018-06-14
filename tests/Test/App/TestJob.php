@@ -9,7 +9,7 @@
 namespace Tests\Test\App;
 
 use Xin\Support\File;
-use Xin\Swoole\Queue\JobInterface;
+use Know\Swoole\Queue\JobInterface;
 
 class TestJob implements JobInterface
 {

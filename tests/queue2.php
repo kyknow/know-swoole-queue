@@ -8,7 +8,6 @@
 // +----------------------------------------------------------------------
 require __DIR__ . '/bootstrap.php';
 
-use Xin\Swoole\Queue\Job;
 use Tests\Test\App\Queue;
 
 $config = include TESTS_PATH . '/_ci/config.php';

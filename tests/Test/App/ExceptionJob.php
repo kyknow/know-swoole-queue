@@ -8,7 +8,7 @@
 // +----------------------------------------------------------------------
 namespace Tests\Test\App;
 
-use Xin\Swoole\Queue\JobInterface;
+use Know\Swoole\Queue\JobInterface;
 
 class ExceptionJob implements JobInterface
 {

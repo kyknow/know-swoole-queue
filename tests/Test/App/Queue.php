@@ -8,7 +8,7 @@
 // +----------------------------------------------------------------------
 namespace Tests\Test\App;
 
-use Xin\Swoole\Queue\Job;
+use Know\Swoole\Queue\Job;
 
 class Queue extends Job
 {

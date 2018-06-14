@@ -9,7 +9,7 @@
 namespace Tests\Test\App;
 
 use Xin\Redis;
-use Xin\Swoole\Queue\JobInterface;
+use Know\Swoole\Queue\JobInterface;
 
 class ManyJob implements JobInterface
 {
