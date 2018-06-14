@@ -1,17 +1,16 @@
 # Swoole Queue Library
 
-[![Build Status](https://travis-ci.org/limingxinleo/x-swoole-queue.svg?branch=master)](https://travis-ci.org/limingxinleo/x-swoole-queue)
-
+[![Build Status](https://travis-ci.org/kyknow/know-swoole-queue.svg?branch=master)](https://travis-ci.org/kyknow/know-swoole-queue)
 ## 安装
 ~~~
-composer require limingxinleo/x-swoole-queue
+composer require know/swoole-queue
 ~~~
 
 ## 基本使用办法
 消息队列使用
 ~~~php
 <?php
-use Xin\Swoole\Queue\Job;
+use Know\Swoole\Queue\Job;
 
 $config = include TESTS_PATH . '/_ci/config.php';
 
@@ -31,7 +30,7 @@ $queue->setRedisConfig($host, $auth, $db, $port)
 namespace Tests\Test\App;
 
 use Xin\Support\File;
-use Xin\Swoole\Queue\JobInterface;
+use Know\Swoole\Queue\JobInterface;
 
 class TestJob implements JobInterface
 {
@@ -67,7 +66,7 @@ $redis->lPush('swoole:queue:queue', serialize($job));
 <?php
 namespace Tests\Test\App;
 
-use Xin\Swoole\Queue\Job;
+use Know\Swoole\Queue\Job;
 
 class Queue extends Job
 {
@@ -108,7 +107,7 @@ $queue->run();
 ~~~php
 <?php
 use Tests\Test\App\Queue;
-use Xin\Swoole\Queue\JobInterface;
+use Know\Swoole\Queue\JobInterface;
 
 class TestJob implements JobInterface
 {
